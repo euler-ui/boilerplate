@@ -1,0 +1,49 @@
+{
+  "name": "euler-boilerplate",
+  "version": "0.0.1-alpha.1",
+  "description": "BoilerPlate for React Projects",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "cross-env NODE_ENV=test mocha --recursive --compilers js:babel-register --require ./test/setup.js",
+    "test:watch": "npm test -- --watch"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.3.14",
+    "babel-standalone": "^6.6.5",
+    "es6-promise": "^3.1.2",
+    "immutable": "^3.7.6",
+    "isomorphic-fetch": "^2.2.1",
+    "react": "^0.14.7",
+    "react-bootstrap": "^0.28.4",
+    "react-dom": "^0.14.7",
+    "react-immutable-render-mixin": "^0.9.5",
+    "react-redux": "^4.1.2",
+    "redux": "^3.1.2",
+    "redux-thunk": "^2.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.15",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-register": "^6.3.13",
+    "chai": "^3.5.0",
+    "cross-env": "^1.0.7",
+    "eslint-config-google": "^0.4.0",
+    "express": "^4.13.3",
+    "jsdom": "^5.6.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-cli": "^0.1.2",
+    "karma-mocha": "^0.2.2",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.2.5",
+    "node-libs-browser": "^0.5.2",
+    "react-addons-test-utils": "^0.14.7",
+    "webpack": "^1.12.14",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.9.1"
+  }
+}
