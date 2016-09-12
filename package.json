@@ -3,9 +3,7 @@
   "version": "0.0.1-alpha.1",
   "description": "BoilerPlate for React Projects",
   "scripts": {
-    "start": "node src/server.js",
-    "test": "cross-env NODE_ENV=test mocha --recursive --compilers js:babel-register --require ./test/setup.js",
-    "test:watch": "npm test -- --watch"
+    "start": "node src/server.js"
   },
   "dependencies": {
     "babel-polyfill": "^6.3.14",
