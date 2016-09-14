@@ -1,0 +1,49 @@
+[
+{
+    "title": "Button",
+    "desc": "Group a series of buttons together on a single line with the button group.",
+    "path": "public/samples/buttonGroups.js"
+}, {
+    "title": "DropDown",
+    "desc": "Create a dropdown button with the <DropdownButton /> component.",
+    "path": "public/samples/dropDowns.js"
+}, {
+    "title": "Dialog",
+    "desc": "A modal dialog component",
+    "path": "public/samples/models.js"
+}, {
+    "title": "Form",
+    "desc": "The <Input> component renders an input in Bootstrap wrappers. Supports label, help, text input add-ons, validation and use as wrapper. Use getValue() or getChecked() to get the current state.",
+    "path": "public/samples/form.js"
+},
+{
+    "title": "Menu",
+    "desc": "This component represents a menu item in a dropdown.",
+    "path": "public/samples/menuItems.js"
+},
+
+{
+    "title": "Popovers",
+    "desc": "The Popover, offers a more robust alternative to the Tooltip for displaying overlays of content.",
+    "path": "public/samples/popovers.js"
+},
+{
+    "title": "Navigation",
+    "desc": "React-Bootstrap offers a variety of responsive, accessible components for setting up navigation both across your website and within your pages.",
+    "path": "public/samples/navs.js"
+},
+{
+    "title": "Tabs",
+    "desc": "Allow the component to control its own state.",
+    "path": "public/samples/tabs.js"
+},
+{
+    "title": "Pager",
+    "desc": "Quick previous and next links.",
+    "path": "public/samples/pager.js"
+},
+{
+    "title": "Login",
+    "desc": "Quick login sample.",
+    "path": "public/samples/login.js"
+}]

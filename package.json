@@ -1,9 +1,11 @@
 {
-  "name": "euler-boilerplate",
-  "version": "0.0.1-alpha.1",
-  "description": "BoilerPlate for React Projects",
+  "name": "common-fe-example",
+  "version": "0.0.0",
+  "description": "React Bootstrap examples",
   "scripts": {
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "test": "cross-env NODE_ENV=test mocha --recursive --compilers js:babel-register --require ./test/setup.js",
+    "test:watch": "npm test -- --watch"
   },
   "dependencies": {
     "babel-polyfill": "^6.3.14",

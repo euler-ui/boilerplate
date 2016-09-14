@@ -1,0 +1,25 @@
+{
+    "plugins": [
+        "react"
+    ],
+    "env": {
+        "es6": true,
+        "browser": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+          "jsx": true
+        }
+    },
+    "globals": {
+        "require": true,
+        "React": true,
+        "Babel": true,
+        "console": true,
+        "ace": true,
+        "ReactBootstrap": true
+    },
+    "extends": ["eslint:recommended", "plugin:react/recommended"]
+}
