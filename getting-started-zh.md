@@ -13,8 +13,8 @@
 你可以通过以下方式获取最新的common-fe-template模板代码，假设你的新项目名为FooApp：
 
 ```shell
-$ git clone -o common-fe-template -b develop --single-branch \
-      git@192.168.2.12:euler/common-fe-template.git FooApp
+$ git clone -o boilerplate -b develop --single-branch \
+      git@github.com:euler-ui/boilerplate.git FooApp
 $ cd FooApp
 ```
 
@@ -23,4 +23,4 @@ $ cd FooApp
 
 #### 3. 运行 `npm start`
 该命令将build项目从/src目录到/build目录。一旦初始化的build完成，他将运行Node.js服务器(node src/server.js)，然后你就可以通过以下方式访问该项目
-> [http://localhost:3333/](http://localhost:3333/) — Node.js server (`src/server.js`)<br>
+> [http://localhost:3334/](http://localhost:3334/) — Node.js server (`src/server.js`)<br>

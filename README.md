@@ -41,11 +41,6 @@ JavaScript library boilerplate, a web project template using:
 └── package.json                # The list of 3rd party libraries and utilities
 ```
 
-### Related Projects
-
-  * [React components sample](http://192.168.2.12/euler/common-fe/tree/develop/examples/react-bootstrap-components-es6) — A sample used to show react bootstrap components, it's build upon react + redux + react bootstrap
-  * [Todos sample](http://192.168.2.12/euler/common-fe/tree/develop/examples/todos) — A redux sample from official redux examples.
-
 ### Learn More
 
   * [Getting Started with React.js](http://facebook.github.io/react/)

@@ -41,10 +41,6 @@
 └── package.json                # 第三方类库及Node脚本
 ```
 
-### 相关项目
-
-  * [React Bootstrap组件展示](http://192.168.2.12/euler/common-fe/tree/develop/examples/react-bootstrap-components-es6) — 该项目用来展示React Bootstrap组件，通过该项目的学习，用户可以了解现有的React Bootstrap的基本组件，由于该项目本身也是使用React+Redux来写的，所以通过学习项目本身的代码，用户也可以快速了解React+Redux的基本思想。
-  * [Todos sample](http://192.168.2.12/euler/common-fe/tree/develop/examples/todos) — Redux官方Todos例子，了解React + Redux的基本思想。
 
 ### 学习更多
 
