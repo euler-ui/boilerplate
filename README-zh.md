@@ -14,7 +14,7 @@
 > Test spies/stubs/mocks - [Sinon](http://sinonjs.org/).  
 
 ### 特性
-### [英文版](README-zh.md)
+### [英文版](README.md)
 
 ### 开始入门
 
