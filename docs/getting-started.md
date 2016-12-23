@@ -14,9 +14,9 @@ You can start by cloning the latest version of common-fe-template on your
 local machine by running:
 
 ```shell
-$ git clone -o boilerplate -b develop --single-branch \
-      git@github.com:euler-ui/boilerplate.git FooApp
+$ git clone -b master --single-branch https://github.com/euler-ui/boilerplate.git FooApp
 $ cd FooApp
+$ rm -rf .git
 ```
 
 #### 2. Run `npm install`

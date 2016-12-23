@@ -13,9 +13,9 @@
 你可以通过以下方式获取最新的common-fe-template模板代码，假设你的新项目名为FooApp：
 
 ```shell
-$ git clone -o boilerplate -b develop --single-branch \
-      git@github.com:euler-ui/boilerplate.git FooApp
+$ git clone -b master --single-branch https://github.com/euler-ui/boilerplate.git FooApp
 $ cd FooApp
+$ rm -rf .git
 ```
 
 #### 2. 运行 `npm install`

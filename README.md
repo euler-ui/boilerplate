@@ -13,7 +13,7 @@ JavaScript library boilerplate, a web project template using:
 > Tests Assertion - [Chai](http://chaijs.com/);  
 > Test spies/stubs/mocks - [Sinon](http://sinonjs.org/);  
 > Text Editors Configuration - [Formatter & Linter & Snippets](./docs/how-to-configure-text-editors.md)  
-> [Code Standard](./docs/standard.md). 
+> [Code Standard](./docs/standard-zh.md). 
   
 ### [中文文档](./README-zh.md)
 
