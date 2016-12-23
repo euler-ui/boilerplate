@@ -3,28 +3,28 @@
 ## 插件安装:
 * 打开sublime,Tools->Command Palette…(快捷键：Ctrl+Shift+P)
 
-![](./docs/image/1.jpg)
+![](./image/1.jpg)
 
 * 搜索Install Package Control并单击安装
 
-![](./docs/image/2.jpg)
+![](./image/2.png)
 
 * Preferences->PackageControl，搜索installpackage并单击，进入插件查找界面
 
-![](./docs/image/3.jpg)
+![](./image/3.png)
 
-![](./docs/image/4.jpg)
+![](./image/4.png)
 
 * 搜索Html-css-js prettify，单击安装
 
-![](./docs/image/5.jpg)
+![](./image/5.png)
 
 ## 插件格式化规则配置：
 
 * Preferences->package setting->Html-css-js prettify->Set Prettify Preferences
 * 用以下代码替换掉原来所有代码
 
-![](./docs/image/6.jpg)
+![](./image/6.png)
 
 ```
 {
@@ -91,14 +91,14 @@
 
 * 还需要配置node路径 ，Preferences->package setting->Html-css-js prettify->Set Plug Options
 
-![](./docs/image/7.jpg)
+![](./image/7.png)
 
 * 将format_on_save属性置为true，就可以在保存代码时自动格式化代码
 
-![](./docs/image/8.jpg)
+![](./image/8.png)
 
 * 完成以上配置后，在sublime编辑（html/css/js）代码时就可以通过右键格式化代码
 
-![](./docs/image/9.jpg)
+![](./image/9.png)
 
 

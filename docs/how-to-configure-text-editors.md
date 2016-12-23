@@ -6,7 +6,7 @@
 ### SublimeText
 
 1. Install SublimeText 3[Download link](https://www.sublimetext.com/3)
-2. Install SublimeText packages  
+2. [Linter & Snippets](./formatters.md)   
 Easiest with [Package Control](https://packagecontrol.io/) and then "Package Control: Install Package" (Ctrl+Shift+P)  
 2.1 Install [Package Control](https://packagecontrol.io/installation)  
 2.2 Install Packages  
