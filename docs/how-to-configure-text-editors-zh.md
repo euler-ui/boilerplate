@@ -5,7 +5,7 @@
 ### SublimeText
 
 1. 安装SublimeText 3[下载链接](https://www.sublimetext.com/3)
-2. 安装SublimeText packages  
+2. [Linter & Snippets](./formatters.md)  
 最简单的是使用 [Package Control](https://packagecontrol.io/) 然后输入 "Package Control: Install Package" (Ctrl+Shift+P)  
 2.1 安装[Package Control](https://packagecontrol.io/installation)  
 2.2 安装Packages  
