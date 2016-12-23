@@ -6,7 +6,7 @@
 ### SublimeText
 
 1. Install SublimeText 3[Download link](https://www.sublimetext.com/3)
-2. [Linter & Snippets](./formatters.md)   
+2. Linter & Snippets   
 Easiest with [Package Control](https://packagecontrol.io/) and then "Package Control: Install Package" (Ctrl+Shift+P)  
 2.1 Install [Package Control](https://packagecontrol.io/installation)  
 2.2 Install Packages  
@@ -15,6 +15,7 @@ Easiest with [Package Control](https://packagecontrol.io/) and then "Package Con
     * [SublimeLinter-contrib-eslint](https://packagecontrol.io/packages/SublimeLinter-contrib-eslint)
     * [SublimeLinter-contrib-stylelint](https://packagecontrol.io/packages/SublimeLinter-contrib-stylelint)
     * [Babel Snippets](https://packagecontrol.io/packages/Babel Snippets)
+3. [Formatters](./formatters-zh.md)
 
 Set Babel as default syntax for a particular extension:
 

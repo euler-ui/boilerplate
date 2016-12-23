@@ -5,7 +5,7 @@
 ### SublimeText
 
 1. 安装SublimeText 3[下载链接](https://www.sublimetext.com/3)
-2. [Linter & Snippets](./formatters.md)  
+2. Linter & Snippets  
 最简单的是使用 [Package Control](https://packagecontrol.io/) 然后输入 "Package Control: Install Package" (Ctrl+Shift+P)  
 2.1 安装[Package Control](https://packagecontrol.io/installation)  
 2.2 安装Packages  
@@ -14,6 +14,7 @@
     * [SublimeLinter-contrib-eslint](https://packagecontrol.io/packages/SublimeLinter-contrib-eslint)
     * [SublimeLinter-contrib-stylelint](https://packagecontrol.io/packages/SublimeLinter-contrib-stylelint)
     * [Babel Snippets](https://packagecontrol.io/packages/Babel Snippets)
+3. [格式化](./formatters-zh.md)
 
 
 给特定的文件格式设置Babel语法：
