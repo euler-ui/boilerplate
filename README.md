@@ -1,4 +1,4 @@
-# Common FE Template - A starter boilerplate for React based web app project.
+# React Boilerplate - A starter boilerplate for React based web app project, powered by Material UI.
 
 
 JavaScript library boilerplate, a web project template using:  

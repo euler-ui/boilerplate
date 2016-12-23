@@ -1,4 +1,4 @@
-# Common FE 模板 - 基于React的项目的一个starter boilerplate.
+# React Boilerplate - A starter boilerplate for React based web app project, powered by Material UI.
 
 
 该模板包含:
