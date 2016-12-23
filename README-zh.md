@@ -12,7 +12,7 @@
 > Test Framework - [Mocha](http://mochajs.org/);  
 > Tests Assertion - [Chai](http://chaijs.com/);  
 > Test spies/stubs/mocks - [Sinon](http://sinonjs.org/);  
-> Text Editors Configuration - [Formatter & Linter & Snippets](./docs/how-to-configure-text-editors.md) 
+> Text Editors Configuration - [Formatter & Linter & Snippets](./docs/how-to-configure-text-editors.md)  
 > [Code Standard](./docs/standard.md). 
 
 
