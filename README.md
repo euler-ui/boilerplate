@@ -11,8 +11,9 @@ JavaScript library boilerplate, a web project template using:
 > Javascript Test Runner - [Karma](https://karma-runner.github.io/0.13/index.html);  
 > Test Framework - [Mocha](http://mochajs.org/);  
 > Tests Assertion - [Chai](http://chaijs.com/);  
-> Test spies/stubs/mocks - [Sinon](http://sinonjs.org/).
-> Text Editors Configuration(Formatter & Linter & Snippets)-[Code Standard](./docs/standard.md).  
+> Test spies/stubs/mocks - [Sinon](http://sinonjs.org/);
+> Text Editors Configuration(Formatter & Linter & Snippets)-[Code Standard](./docs/standard.md). 
+  
 
 ### Features
 ### [Chinese](./README-zh.md)
