@@ -14,10 +14,11 @@
 > Test spies/stubs/mocks - [Sinon](http://sinonjs.org/).  
 
 ### 特性
+### [英文版](README-zh.md)
 
 ### 开始入门
 
-  * 按照 [开始入门手册](./getting-started-zh.md) 来下载和运行项目
+  * 按照 [开始入门手册](./docs/getting-started-zh.md) 来下载和运行项目
 
 ### Directory Layout
 

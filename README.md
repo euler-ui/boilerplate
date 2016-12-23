@@ -14,10 +14,11 @@ JavaScript library boilerplate, a web project template using:
 > Test spies/stubs/mocks - [Sinon](http://sinonjs.org/).  
 
 ### Features
+### [Chinese](./README-zh.md)
 
 ### Getting Started
 
-  * Follow the [getting started guide](./getting-started.md) to download and run the project
+  * Follow the [getting started guide](./docs/getting-started.md) to download and run the project
 
 ### Directory Layout
 
