@@ -11,13 +11,16 @@
 > Javascript Test Runner - [Karma](https://karma-runner.github.io/0.13/index.html);  
 > Test Framework - [Mocha](http://mochajs.org/);  
 > Tests Assertion - [Chai](http://chaijs.com/);  
-> Test spies/stubs/mocks - [Sinon](http://sinonjs.org/).  
+> Test spies/stubs/mocks - [Sinon](http://sinonjs.org/);
+> Text Editors Configuration(Formatter & Linter & Snippets)-[Code Standard](./docs/standard.md). 
+
 
 ### 特性
+### [英文版](README.md)
 
 ### 开始入门
 
-  * 按照 [开始入门手册](./getting-started-zh.md) 来下载和运行项目
+  * 按照 [开始入门手册](./docs/getting-started-zh.md) 来下载和运行项目
 
 ### Directory Layout
 
