@@ -1,4 +1,4 @@
-# Common FE Template - A starter boilerplate for React based web app project.
+# React BoilerPlate - A starter boilerplate for React based web app project.
 
 
 JavaScript library boilerplate, a web project template using:  
@@ -11,12 +11,13 @@ JavaScript library boilerplate, a web project template using:
 > Javascript Test Runner - [Karma](https://karma-runner.github.io/0.13/index.html);  
 > Test Framework - [Mocha](http://mochajs.org/);  
 > Tests Assertion - [Chai](http://chaijs.com/);  
-> Test spies/stubs/mocks - [Sinon](http://sinonjs.org/);
-> Text Editors Configuration(Formatter & Linter & Snippets)-[Code Standard](./docs/standard.md). 
+> Test spies/stubs/mocks - [Sinon](http://sinonjs.org/);  
+> Text Editors Configuration(Formatter & Linter & Snippets)  
+> [Code Standard](./docs/standard.md). 
   
+### [中文文档](./README-zh.md)
 
 ### Features
-### [Chinese](./README-zh.md)
 
 ### Getting Started
 
