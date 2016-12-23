@@ -35,6 +35,15 @@ const BuildList = React.createClass({
       return
     }
   },
+  onPerformanceTest() {
+    console.time("onPerformanceTest");
+    var test = [];
+    for (var i = 0; i < 1000000; i++) {
+      test.push(i);
+      window["badcode" + i] = 1;
+    }
+    console.timeEnd("onPerformanceTest");
+  },
   getInitialState() {
     return {
       selectedRows: [],
@@ -58,6 +67,7 @@ const BuildList = React.createClass({
           <RaisedButton label="New" style={ style } onClick={ this.onNew } />
           <RaisedButton label="Run" primary={ true } style={ style } onClick={ this.onRun } />
           <RaisedButton label="Delete" secondary={ true } style={ style } onClick={ this.onDelete } />
+          <RaisedButton label="Performance Test" style={ style } onClick={ this.onPerformanceTest } />
         </div>
         <Divider />
         <Table onRowSelection={ this.onRowSelection } ref="table">

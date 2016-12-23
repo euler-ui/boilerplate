@@ -14,8 +14,7 @@ You can start by cloning the latest version of common-fe-template on your
 local machine by running:
 
 ```shell
-$ git clone -o boilerplate -b develop --single-branch \
-      git@github.com:euler-ui/boilerplate.git FooApp
+$ git clone -b material-ui --single-branch https://github.com/euler-ui/boilerplate.git FooApp
 $ cd FooApp
 ```
 
@@ -23,6 +22,9 @@ $ cd FooApp
 This will install both run-time project dependencies and developer tools listed
 in [package.json](./package.json) file.
 
-#### 3. Run `npm start`
-This command will build the app from the source files (/src) into the output /build folder. As soon as the initial build completes, it will start the Node.js server (node src/server.js).
-> [http://localhost:3334/](http://localhost:3334/) — Node.js server (`src/server.js`)<br>
+#### 3. Run `npm start server`  
+Start the express mock server.
+
+#### 4. Run `npm start`
+This command will build the app from the source files (/src). As soon as the initial build completes, visit below links and enjoy!
+> [http://localhost:3000/](http://localhost:3000/)

@@ -21,6 +21,9 @@ $ cd FooApp
 #### 2. 运行 `npm install`
 该命令将安装位于[package.json](./package.json)的运行时和开发时的项目依赖库。
 
-#### 3. 运行 `npm start`
-该命令将build项目从/src目录到/build目录。一旦初始化的build完成，他将运行Node.js服务器(node src/server.js)，然后你就可以通过以下方式访问该项目
-> [http://localhost:3334/](http://localhost:3334/) — Node.js server (`src/server.js`)<br>
+#### 3. Run `npm start server`  
+Start the express mock server.
+
+#### 4. Run `npm start`
+一旦初始化的build完成，你就可以通过以下方式访问该项目  
+> [http://localhost:3000/](http://localhost:3000/)
