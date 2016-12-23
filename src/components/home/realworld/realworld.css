@@ -1,0 +1,50 @@
+.realworld-build {
+  width: 50%;
+  min-width: 450px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.realworld-build h1 {
+  padding-left: 15px;
+}
+
+.progress-btn__progress {
+  position: absolute;
+  background-color: green;
+  opacity: 0.3;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transition: width 1s;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.progress-btn__progress--running {
+  position: absolute;
+  height: 100%;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  animation: btnProgress 1.5s infinite 1s ease;
+}
+
+.progress-btn {
+  position: relative;
+  margin: 0px 15px;
+}
+
+.realworld-build-console {
+    height: 100%;
+    min-height: 350px;
+    max-height: 620px;
+    padding: 10px;
+    margin: 20px 15px;
+    
+    overflow-y: auto;
+    text-align: left;
+
+    box-shadow: 1px 1px 5px #666;
+    background-color: #f5f5f5;
+    color: black;
+}

@@ -1,51 +1,49 @@
-import {Grid} from 'react-bootstrap'
-import {Row} from 'react-bootstrap'
-import {Col} from 'react-bootstrap'
-import SamplesContainer from './containers/SamplesContainer'
-import { createStore, bindActionCreators, applyMiddleware } from 'redux'
-import { Provider, connect } from 'react-redux'
-import { render } from 'react-dom'
-import rootReducer from './reducers'
-import thunk from 'redux-thunk'
-import * as ItemsActions from './actions'
-import ImmutableRenderMixin from 'react-immutable-render-mixin'
-import NavTree from './components/NavTree.js'
-import Header from './components/Header.js'
-import RenderMixin from "./utility/RenderMixin"
+import React from 'react';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
+import { createStore, applyMiddleware, compose } from 'redux';
+import rootReducer from './reducers';
+import { Router, Route, browserHistory, IndexRoute } from 'react-router';
+import Signin from './components/portal/signin';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+import './base.css';
 
-var AppContainer = React.createClass({
-  mixins: [RenderMixin],
-  propTypes: {
-        samples: React.PropTypes.array
-  },
+// Needed for onTouchTap
+// http://stackoverflow.com/a/34015469/988941
+injectTapEventPlugin();
+
+const AppContainer = React.createClass({
   render: function() {
-    console.log("AppContainer:render", arguments);
     return (
+      <MuiThemeProvider>
         <div>
-        <Header></Header>
-        <Grid>
-            <Row className="show-grid">
-                <Col md={4} sm={4} xsHidden><NavTree /></Col>
-                <Col md={8} sm={8}><SamplesContainer /></Col>
-            </Row>
-        </Grid>
+          { this.props.children }
         </div>
+      </MuiThemeProvider>
     )
-  },
-  componentWillReceiveProps: function() {
-    console.log("AppContainer:componentWillReceiveProps", arguments);
-  },
-  componentDidUpdate: function() {
-    console.log("AppContainer:componentDidUpdate", arguments);
   }
 });
 
-var store = createStore(rootReducer, applyMiddleware(thunk));
-window.store = store;
+const rootRoute = {
+  childRoutes: [{
+    path: '/',
+    component: AppContainer,
+    indexRoute: {
+      component: Signin
+    },
+    childRoutes: [
+      require('./routes/home'),
+      require('./routes/portal/signin')
+    ]
+  }]
+}
 
-ReactDOM.render(
-  <Provider store={store}>
-    <AppContainer />
-  </Provider>
-, $("#content")[0]
+const store = createStore(rootReducer, {}, compose(applyMiddleware(thunk), window.devToolsExtension ? window.devToolsExtension() : f => f));
+
+render(
+  <Provider store={ store }>
+    <Router history={ browserHistory } routes={ rootRoute } />
+  </Provider>, document.getElementById('content')
 )
