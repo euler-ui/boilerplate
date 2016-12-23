@@ -1,6 +1,5 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var _ = require('lodash');
 var router = require('./routes/index');
 
 var cookieParser = require('cookie-parser')

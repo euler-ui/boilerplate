@@ -1,8 +1,7 @@
 .portal-signin-form {
   position: fixed;
   left: 50%;
-  top: 20%;
-  transform: translateY(-50%);
+  top: 50px;
   width: 300px;
   margin-left: -150px;
 }
