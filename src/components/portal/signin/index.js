@@ -57,32 +57,32 @@ var SignIn = React.createClass({
       })
     }
   },
-  login() {
-    this.setState({
-      logining: true,
-      openError: false
-    })
-    setTimeout(() => {
-      this.handleLoginResult({
-        status: "SUCCESS"
-      });
-    }, 3000)
-  },
   // login() {
   //   this.setState({
   //     logining: true,
   //     openError: false
   //   })
-  //   fetch("/api/portal/users/login", {
-  //     method: "POST",
-  //     headers: {
-  //       'Content-Type': 'application/json'
-  //     },
-  //     body: JSON.stringify(this.refs.signin.getValue())
-  //   }).then((response) => {
-  //     return response.json();
-  //   }).then(this.handleLoginResult).catch(this.handleLoginResult);
+  //   setTimeout(() => {
+  //     this.handleLoginResult({
+  //       status: "SUCCESS"
+  //     });
+  //   }, 3000)
   // },
+  login() {
+    this.setState({
+      logining: true,
+      openError: false
+    })
+    fetch("/api/portal/users/login", {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(this.refs.signin.getValue())
+    }).then((response) => {
+      return response.json();
+    }).then(this.handleLoginResult).catch(this.handleLoginResult);
+  },
   render: function() {
     return (
       <div>

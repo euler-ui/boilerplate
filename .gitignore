@@ -1,4 +1,3 @@
 # ignore npm modules
-build
 node_modules
 npm-debug.log
