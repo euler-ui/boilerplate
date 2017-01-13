@@ -22,10 +22,10 @@ module.exports = {
     contentBase: "build",
     proxy: {
       '/api': {
-        target: 'https://react-boilerplate-server.herokuapp.com',
+        target: 'http://localhost:8000',
         secure: false,
         pathRewrite: {
-          '^/api': ''
+          '^/api': '/api'
         }
       }
     }
