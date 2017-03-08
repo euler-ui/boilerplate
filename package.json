@@ -3,8 +3,9 @@
   "version": "1.0.0-alpha",
   "description": "React BoilerPlate with react bootstrap",
   "scripts": {
-    "start": "webpack-dev-server --port 3001 --progress --colors",
+    "start": "webpack-dev-server --port 3334 --progress --colors",
     "prod": "webpack -p --config webpack.config.prod.js --progress --colors",
+    "start:prod": "node scripts/startProduct.js --port 5000",
     "test": "cross-env NODE_ENV=test mocha --recursive --compilers js:babel-register --require ./test/setup.js",
     "test:watch": "npm test -- --watch"
   },
@@ -54,6 +55,7 @@
     "react-addons-test-utils": "^0.14.7",
     "style-loader": "^0.13.2",
     "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.3.0"
+    "webpack-dev-server": "^2.3.0",
+    "yargs": "^7.0.1"
   }
 }

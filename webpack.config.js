@@ -4,7 +4,7 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var webpack = require('webpack');
 module.exports = {
   // devtool: 'inline-source-map',
-  devtool: 'cheap-source-map',
+  devtool: 'cheap-module-eval-source-map',
   entry: {
     app: './src/index'
   },
@@ -15,9 +15,7 @@ module.exports = {
   },
   devServer: {
     hot: true,
-    inline: true,
-    quiet: false,
-    noInfo: true
+    inline: true
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),

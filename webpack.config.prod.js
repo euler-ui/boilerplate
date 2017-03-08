@@ -12,12 +12,6 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/'
   },
-  devServer: {
-    hot: true,
-    inline: true,
-    quiet: false,
-    noInfo: true
-  },
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
@@ -27,7 +21,8 @@ module.exports = {
     new ExtractTextPlugin("bundle.css"),
     new CopyWebpackPlugin([
       {
-        from: 'src/public/**/*'
+        context: "src/public",
+        from: '**/*'
       }
     ])
   ],
