@@ -1,17 +1,16 @@
-var Pager = ReactBootstrap.Pager;
-var PageItem = ReactBootstrap.PageItem;
+import { Pager, PageItem } from 'react-bootstrap';
 var pagerInstance = (
-    <div>
-        <Pager>
-            <PageItem previous href="#">&larr; Previous Page</PageItem>
-            <PageItem next href="#">Next Page &rarr;</PageItem>
-        </Pager>
-        <p></p>
-        <Pager>
-            <PageItem previous href="#">&larr; Previous</PageItem>
-            <PageItem disabled next href="#">Next &rarr;</PageItem>
-        </Pager>
-    </div>
+<div>
+  <Pager>
+    <PageItem previous href="#">← Previous Page</PageItem>
+    <PageItem next href="#">Next Page →</PageItem>
+  </Pager>
+  <p></p>
+  <Pager>
+    <PageItem previous href="#">← Previous</PageItem>
+    <PageItem disabled next href="#">Next →</PageItem>
+  </Pager>
+</div>
 );
 
 ReactDOM.render(pagerInstance, mountNode);

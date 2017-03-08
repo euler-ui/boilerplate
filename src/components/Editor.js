@@ -1,8 +1,6 @@
-import RenderMixin from "../utility/RenderMixin"
+import React from 'react';
 var Editor = React.createClass({
-  mixins: [RenderMixin],
   render: function() {
-    console.log("Editor:render", arguments);
     var isEditorVisible = this.props.isEditorVisible;
     var divStyle = {
       "height": "200px"
@@ -13,7 +11,7 @@ var Editor = React.createClass({
       divStyle.display = "none";
     }
     return (
-      <div ref="editor" style={divStyle}></div>
+      <div ref="editor" style={ divStyle }></div>
     );
   },
   componentDidMount: function() {
@@ -35,12 +33,6 @@ var Editor = React.createClass({
     }
     editor.setValue(props.code);
     editor.selection.clearSelection();
-  },
-  // componentWillReceiveProps: function() {
-  //   console.log("Editor:componentWillReceiveProps", arguments);
-  // },
-  // componentDidUpdate: function() {
-  //   console.log("Editor:componentDidUpdate", arguments);
-  // }
+  }
 });
 export default Editor;

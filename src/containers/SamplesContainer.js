@@ -1,33 +1,26 @@
-import SampleContainer from "./SampleContainer"
-import * as actions from '../actions'
-import { bindActionCreators } from 'redux'
-import { connect } from 'react-redux'
-import RenderMixin from "../utility/RenderMixin"
+import SampleContainer from "./SampleContainer";
+import * as actions from 'actions';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import React from 'react';
 var SamplesConatiner = React.createClass({
-  mixins: [RenderMixin], 
   render: function() {
-    console.log("SamplesConatiner:render", arguments);
     var props = this.props;
     var origSamples = props.samples;
     var samples = origSamples.map(function(sample) {
       return (
-        <SampleContainer {...sample} key={sample.path}/>
+        <SampleContainer {...sample} key={ sample.path } />
       );
     });
     return (
-      <div>{samples}</div>
+      <div>
+        { samples }
+      </div>
     );
   },
   componentWillMount: function() {
-    var props = this.props;
-    props.fetchSamples("public/samples/data.json");
+    this.props.fetchSamples("samples/data.json");
   },
-  // componentWillReceiveProps: function() {
-  //   console.log("SamplesConatiner:componentWillReceiveProps", arguments);
-  // },
-  // componentDidUpdate: function() {
-  //   console.log("SamplesConatiner:componentDidUpdate", arguments);
-  // }
 });
 const mapStateToProps = (state) => {
   return {

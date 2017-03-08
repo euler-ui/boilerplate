@@ -1,40 +1,39 @@
-require('es6-promise').polyfill();
-fetch = require('isomorphic-fetch')
+import 'whatwg-fetch';
 
 export const fetchSampleData = (uri) => {
   return dispatch => {
     fetch(uri)
-    .then(function(response) {
+      .then(function(response) {
         if (response.status >= 400) {
-            throw new Error("Bad response from server");
+          throw new Error("Bad response from server");
         }
         return response.text();
-    })
-    .then(function(text) {
+      })
+      .then(function(text) {
         dispatch({
           type: 'RECEIVE_SAMPLE',
           path: uri,
           code: text
         })
-    })
+      })
   }
 }
 
 export const fetchSamples = (uri) => {
   return dispatch => {
     fetch(uri)
-    .then(function(response) {
+      .then(function(response) {
         if (response.status >= 400) {
-            throw new Error("Bad response from server");
+          throw new Error("Bad response from server");
         }
         return response.json();
-    })
-    .then(function(json) {
+      })
+      .then(function(json) {
         dispatch({
           type: 'RECEIVE_SAMPLES',
           samples: json
         })
-    })
+      })
   }
 }
 

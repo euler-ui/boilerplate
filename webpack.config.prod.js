@@ -3,7 +3,6 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var webpack = require('webpack');
 module.exports = {
-  // devtool: 'inline-source-map',
   devtool: 'cheap-source-map',
   entry: {
     app: './src/index'
@@ -20,12 +19,15 @@ module.exports = {
     noInfo: true
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('production')
+      }
+    }),
     new ExtractTextPlugin("bundle.css"),
     new CopyWebpackPlugin([
       {
-        context: "src/public",
-        from: '**/*'
+        from: 'src/public/**/*'
       }
     ])
   ],
