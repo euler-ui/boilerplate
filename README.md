@@ -23,6 +23,9 @@ JavaScript library boilerplate, a web project template using:
 
   * Follow the [getting started guide](./docs/getting-started.md) to download and run the project
 
+### Build Project
+  * Follow [Build Doc](./docs/build.md) to build the project.
+
 ### Directory Layout
 
 ```
